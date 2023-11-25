@@ -1,4 +1,5 @@
 import {Request, Response, NextFunction} from "express";
+import {Buffer} from 'node:buffer'
 
 const login = 'admin'
 const password = 'qwerty'

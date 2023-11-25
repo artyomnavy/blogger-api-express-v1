@@ -10,7 +10,7 @@ const descriptionValidation = body('description')
     .withMessage('Invalid description')
 
 const websiteUrlValidation = body('websiteUrl')
-    .isString().trim().isLength({min: 1, max: 100})
+    .isString().trim().isLength({min: 1, max: 100}).withMessage('Invalid websiteUrl')
     .matches('^https://([a-zA-Z0-9_-]+\.)+[a-zA-Z0-9_-]+(\/[a-zA-Z0-9_-]+)*\/?$')
     .withMessage('Invalid websiteUrl')
 
