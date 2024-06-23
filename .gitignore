@@ -1,6 +1,4 @@
 .idea
-__tests__
 node_modules
 dist
-jest.config.ts
 yarn-error.log*
